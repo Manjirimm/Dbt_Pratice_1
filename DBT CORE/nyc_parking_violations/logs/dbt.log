@@ -1457,3 +1457,437 @@ KeyboardInterrupt
 [0m16:27:51.075486 [debug] [MainThread]: Command `dbt docs serve` failed at 16:27:51.075486 after 297.41 seconds
 [0m16:27:51.088694 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A83ACF4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A869FA6B0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023A869F8F70>]}
 [0m16:27:51.089682 [debug] [MainThread]: Flushing usage events
+[0m22:07:53.530517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DF42BF4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DF7109CC0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DF7109240>]}
+
+
+============================== 22:07:53.530517 | 4e0ae2b5-ea32-4aa4-a5a3-463f92bd8277 ==============================
+[0m22:07:53.530517 [info ] [MainThread]: Running with dbt=1.6.1
+[0m22:07:53.530517 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug', 'no_print': 'None', 'target_path': 'None', 'profiles_dir': 'D:\\DBT CORE\\nyc_parking_violations', 'printer_width': '80', 'warn_error': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'log_path': 'D:\\DBT CORE\\nyc_parking_violations\\logs', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'indirect_selection': 'eager', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m22:07:53.530517 [info ] [MainThread]: dbt version: 1.6.1
+[0m22:07:53.530517 [info ] [MainThread]: python version: 3.10.8
+[0m22:07:53.530517 [info ] [MainThread]: python path: C:\Users\Manjiri\AppData\Local\Programs\Python\Python310\python.exe
+[0m22:07:53.530517 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m22:07:53.751693 [info ] [MainThread]: Using profiles dir at D:\DBT CORE\nyc_parking_violations
+[0m22:07:53.751693 [info ] [MainThread]: Using profiles.yml file at D:\DBT CORE\nyc_parking_violations\profiles.yml
+[0m22:07:53.751693 [info ] [MainThread]: Using dbt_project.yml file at D:\DBT CORE\nyc_parking_violations\dbt_project.yml
+[0m22:07:53.759264 [info ] [MainThread]: adapter type: duckdb
+[0m22:07:53.759264 [info ] [MainThread]: adapter version: 1.6.0
+[0m22:07:53.784472 [info ] [MainThread]: Configuration:
+[0m22:07:53.784472 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m22:07:53.784472 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m22:07:53.784472 [info ] [MainThread]: Required dependencies:
+[0m22:07:53.784472 [debug] [MainThread]: Executing "git --help"
+[0m22:07:53.827933 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m22:07:53.827933 [debug] [MainThread]: STDERR: "b''"
+[0m22:07:53.827933 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m22:07:53.827933 [info ] [MainThread]: Connection:
+[0m22:07:53.827933 [info ] [MainThread]:   database: nyc_parking_violations
+[0m22:07:53.842775 [info ] [MainThread]:   schema: main
+[0m22:07:53.843232 [info ] [MainThread]:   path: ../data/nyc_parking_violations.db
+[0m22:07:53.843232 [info ] [MainThread]:   config_options: None
+[0m22:07:53.843232 [info ] [MainThread]:   extensions: None
+[0m22:07:53.843232 [info ] [MainThread]:   settings: None
+[0m22:07:53.847169 [info ] [MainThread]:   external_root: .
+[0m22:07:53.847169 [info ] [MainThread]:   use_credential_provider: None
+[0m22:07:53.847169 [info ] [MainThread]:   attach: None
+[0m22:07:53.847169 [info ] [MainThread]:   filesystems: None
+[0m22:07:53.850282 [info ] [MainThread]:   remote: None
+[0m22:07:53.850711 [info ] [MainThread]:   plugins: None
+[0m22:07:53.851716 [info ] [MainThread]:   disable_transactions: False
+[0m22:07:53.851716 [info ] [MainThread]: Registered adapter: duckdb=1.6.0
+[0m22:07:53.851716 [debug] [MainThread]: Acquiring new duckdb connection 'debug'
+[0m22:07:53.851716 [debug] [MainThread]: Using duckdb connection "debug"
+[0m22:07:53.851716 [debug] [MainThread]: On debug: select 1 as id
+[0m22:07:53.851716 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:07:53.897378 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m22:07:53.897378 [debug] [MainThread]: On debug: Close
+[0m22:07:53.897378 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m22:07:53.908341 [info ] [MainThread]: [32mAll checks passed![0m
+[0m22:07:53.910576 [debug] [MainThread]: Command `dbt debug` succeeded at 22:07:53.909914 after 0.41 seconds
+[0m22:07:53.910576 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m22:07:53.911380 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DF42BF4F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DF7202A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000017DF7201900>]}
+[0m22:07:53.911380 [debug] [MainThread]: Flushing usage events
+[0m22:08:06.537901 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001621EE4F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221C99E10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221C988E0>]}
+
+
+============================== 22:08:06.541106 | 7f14defe-ab5d-433d-9340-8beee0f9d80a ==============================
+[0m22:08:06.541106 [info ] [MainThread]: Running with dbt=1.6.1
+[0m22:08:06.542795 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt compile', 'target_path': 'None', 'log_format': 'default', 'no_print': 'None', 'printer_width': '80', 'warn_error': 'None', 'indirect_selection': 'eager', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'log_path': 'D:\\DBT CORE\\nyc_parking_violations\\logs', 'version_check': 'True', 'use_experimental_parser': 'False', 'quiet': 'False', 'introspect': 'True', 'log_cache_events': 'False', 'debug': 'False', 'profiles_dir': 'D:\\DBT CORE\\nyc_parking_violations', 'use_colors': 'True', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m22:08:06.716728 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '7f14defe-ab5d-433d-9340-8beee0f9d80a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221C99B70>]}
+[0m22:08:06.720838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '7f14defe-ab5d-433d-9340-8beee0f9d80a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221D7ED70>]}
+[0m22:08:06.720838 [info ] [MainThread]: Registered adapter: duckdb=1.6.0
+[0m22:08:06.738261 [debug] [MainThread]: checksum: efe19d9f5b93d1a98cc804fbfcdb6b3aced98b974af664946fee1cde8837deb7, vars: {}, profile: , target: , version: 1.6.1
+[0m22:08:06.856926 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 2 files added, 0 files changed.
+[0m22:08:06.856926 [debug] [MainThread]: Partial parsing: added file: nyc_parking_violations://models\bronze\bronze_parking_violations.sql
+[0m22:08:06.856926 [debug] [MainThread]: Partial parsing: added file: nyc_parking_violations://models\bronze\bronze_parking_violation_codes.sql
+[0m22:08:06.904240 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '7f14defe-ab5d-433d-9340-8beee0f9d80a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221F5A050>]}
+[0m22:08:06.926382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '7f14defe-ab5d-433d-9340-8beee0f9d80a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221EF3040>]}
+[0m22:08:06.926382 [info ] [MainThread]: Found 4 models, 0 sources, 0 exposures, 0 metrics, 348 macros, 0 groups, 0 semantic models
+[0m22:08:06.926382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f14defe-ab5d-433d-9340-8beee0f9d80a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221F33280>]}
+[0m22:08:06.926382 [info ] [MainThread]: 
+[0m22:08:06.926382 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:08:06.926382 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_parking_violations_main'
+[0m22:08:06.941420 [debug] [ThreadPool]: Using duckdb connection "list_nyc_parking_violations_main"
+[0m22:08:06.941420 [debug] [ThreadPool]: On list_nyc_parking_violations_main: BEGIN
+[0m22:08:06.941420 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:08:06.961198 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:06.961198 [debug] [ThreadPool]: Using duckdb connection "list_nyc_parking_violations_main"
+[0m22:08:06.963203 [debug] [ThreadPool]: On list_nyc_parking_violations_main: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "connection_name": "list_nyc_parking_violations_main"} */
+select
+      'nyc_parking_violations' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'nyc_parking_violations'
+  
+[0m22:08:06.989534 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:06.989534 [debug] [ThreadPool]: On list_nyc_parking_violations_main: ROLLBACK
+[0m22:08:06.989534 [debug] [ThreadPool]: Failed to rollback 'list_nyc_parking_violations_main'
+[0m22:08:06.989534 [debug] [ThreadPool]: On list_nyc_parking_violations_main: Close
+[0m22:08:06.997991 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '7f14defe-ab5d-433d-9340-8beee0f9d80a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221F0C5E0>]}
+[0m22:08:06.997991 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:08:06.997991 [info ] [MainThread]: 
+[0m22:08:07.004873 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:07.004873 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.nyc_parking_violations.bronze_parking_violation_codes'
+[0m22:08:07.004873 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:07.013117 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:07.016433 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violation_codes (compile): 22:08:07.004873 => 22:08:07.016433
+[0m22:08:07.016433 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:07.019653 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violation_codes (execute): 22:08:07.016433 => 22:08:07.016433
+[0m22:08:07.019653 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:07.022765 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:07.022765 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_parking_violations.bronze_parking_violation_codes, now model.nyc_parking_violations.bronze_parking_violations)
+[0m22:08:07.024775 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:07.028789 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:07.028789 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violations (compile): 22:08:07.024775 => 22:08:07.028789
+[0m22:08:07.028789 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:07.028789 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violations (execute): 22:08:07.028789 => 22:08:07.028789
+[0m22:08:07.028789 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:07.028789 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.first_model
+[0m22:08:07.028789 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_parking_violations.bronze_parking_violations, now model.nyc_parking_violations.first_model)
+[0m22:08:07.028789 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.first_model
+[0m22:08:07.028789 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.first_model"
+[0m22:08:07.037429 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.first_model (compile): 22:08:07.028789 => 22:08:07.037429
+[0m22:08:07.038956 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.first_model
+[0m22:08:07.039739 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.first_model (execute): 22:08:07.039739 => 22:08:07.039739
+[0m22:08:07.039739 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.first_model
+[0m22:08:07.039739 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.ref_model
+[0m22:08:07.039739 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_parking_violations.first_model, now model.nyc_parking_violations.ref_model)
+[0m22:08:07.039739 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.ref_model
+[0m22:08:07.044297 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.ref_model"
+[0m22:08:07.045802 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.ref_model (compile): 22:08:07.039739 => 22:08:07.045802
+[0m22:08:07.045802 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.ref_model
+[0m22:08:07.045802 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.ref_model (execute): 22:08:07.045802 => 22:08:07.045802
+[0m22:08:07.048655 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.ref_model
+[0m22:08:07.048655 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:08:07.048655 [debug] [MainThread]: Connection 'list_nyc_parking_violations_main' was properly closed.
+[0m22:08:07.048655 [debug] [MainThread]: Connection 'model.nyc_parking_violations.ref_model' was properly closed.
+[0m22:08:07.048655 [debug] [MainThread]: Command end result
+[0m22:08:07.058830 [debug] [MainThread]: Command `dbt compile` succeeded at 22:08:07.058830 after 0.56 seconds
+[0m22:08:07.058830 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001621EE4F490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221D7ED70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016221EF3F40>]}
+[0m22:08:07.058830 [debug] [MainThread]: Flushing usage events
+[0m22:08:22.189329 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AC74F520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF599D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF598820>]}
+
+
+============================== 22:08:22.193161 | 0c5deff1-28f0-44e5-bbc2-7375c0d09422 ==============================
+[0m22:08:22.193161 [info ] [MainThread]: Running with dbt=1.6.1
+[0m22:08:22.195166 [debug] [MainThread]: running dbt with arguments {'profiles_dir': 'D:\\DBT CORE\\nyc_parking_violations', 'cache_selected_only': 'False', 'no_print': 'None', 'use_colors': 'True', 'target_path': 'None', 'warn_error': 'None', 'log_path': 'D:\\DBT CORE\\nyc_parking_violations\\logs', 'fail_fast': 'False', 'indirect_selection': 'eager', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'partial_parse': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'introspect': 'True', 'quiet': 'False', 'log_cache_events': 'False', 'debug': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'printer_width': '80', 'write_json': 'True'}
+[0m22:08:22.316876 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF599AB0>]}
+[0m22:08:22.332092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF67AE60>]}
+[0m22:08:22.332092 [info ] [MainThread]: Registered adapter: duckdb=1.6.0
+[0m22:08:22.332092 [debug] [MainThread]: checksum: efe19d9f5b93d1a98cc804fbfcdb6b3aced98b974af664946fee1cde8837deb7, vars: {}, profile: , target: , version: 1.6.1
+[0m22:08:22.409383 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m22:08:22.409383 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m22:08:22.416960 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF840D60>]}
+[0m22:08:22.423777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF8101F0>]}
+[0m22:08:22.423777 [info ] [MainThread]: Found 4 models, 0 sources, 0 exposures, 0 metrics, 348 macros, 0 groups, 0 semantic models
+[0m22:08:22.423777 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF8100D0>]}
+[0m22:08:22.432408 [info ] [MainThread]: 
+[0m22:08:22.435738 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m22:08:22.436743 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_parking_violations'
+[0m22:08:22.445767 [debug] [ThreadPool]: Using duckdb connection "list_nyc_parking_violations"
+[0m22:08:22.445767 [debug] [ThreadPool]: On list_nyc_parking_violations: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "connection_name": "list_nyc_parking_violations"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where catalog_name = '"nyc_parking_violations"'
+    
+  
+  
+[0m22:08:22.447398 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:08:22.463655 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:22.463655 [debug] [ThreadPool]: On list_nyc_parking_violations: Close
+[0m22:08:22.468405 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_nyc_parking_violations, now create_nyc_parking_violations_main)
+[0m22:08:22.469973 [debug] [ThreadPool]: Creating schema "database: "nyc_parking_violations"
+schema: "main"
+"
+[0m22:08:22.470763 [debug] [ThreadPool]: Using duckdb connection "create_nyc_parking_violations_main"
+[0m22:08:22.470763 [debug] [ThreadPool]: On create_nyc_parking_violations_main: BEGIN
+[0m22:08:22.470763 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m22:08:22.488368 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:22.490372 [debug] [ThreadPool]: Using duckdb connection "create_nyc_parking_violations_main"
+[0m22:08:22.490372 [debug] [ThreadPool]: On create_nyc_parking_violations_main: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "connection_name": "create_nyc_parking_violations_main"} */
+create schema if not exists "nyc_parking_violations"."main"
+[0m22:08:22.499664 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:22.499664 [debug] [ThreadPool]: On create_nyc_parking_violations_main: COMMIT
+[0m22:08:22.499664 [debug] [ThreadPool]: Using duckdb connection "create_nyc_parking_violations_main"
+[0m22:08:22.499664 [debug] [ThreadPool]: On create_nyc_parking_violations_main: COMMIT
+[0m22:08:22.499664 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:22.499664 [debug] [ThreadPool]: On create_nyc_parking_violations_main: Close
+[0m22:08:22.507239 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_nyc_parking_violations_main'
+[0m22:08:22.512826 [debug] [ThreadPool]: Using duckdb connection "list_nyc_parking_violations_main"
+[0m22:08:22.512826 [debug] [ThreadPool]: On list_nyc_parking_violations_main: BEGIN
+[0m22:08:22.512826 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m22:08:22.523051 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:22.523051 [debug] [ThreadPool]: Using duckdb connection "list_nyc_parking_violations_main"
+[0m22:08:22.523051 [debug] [ThreadPool]: On list_nyc_parking_violations_main: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "connection_name": "list_nyc_parking_violations_main"} */
+select
+      'nyc_parking_violations' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where table_schema = 'main'
+    and table_catalog = 'nyc_parking_violations'
+  
+[0m22:08:22.532666 [debug] [ThreadPool]: SQL status: OK in 0.0 seconds
+[0m22:08:22.540147 [debug] [ThreadPool]: On list_nyc_parking_violations_main: ROLLBACK
+[0m22:08:22.540147 [debug] [ThreadPool]: Failed to rollback 'list_nyc_parking_violations_main'
+[0m22:08:22.540147 [debug] [ThreadPool]: On list_nyc_parking_violations_main: Close
+[0m22:08:22.540147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF879ED0>]}
+[0m22:08:22.540147 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:08:22.540147 [debug] [MainThread]: On master: BEGIN
+[0m22:08:22.547463 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m22:08:22.559494 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m22:08:22.559494 [debug] [MainThread]: On master: COMMIT
+[0m22:08:22.559494 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:08:22.561498 [debug] [MainThread]: On master: COMMIT
+[0m22:08:22.561498 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m22:08:22.561498 [debug] [MainThread]: On master: Close
+[0m22:08:22.563504 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m22:08:22.563504 [info ] [MainThread]: 
+[0m22:08:22.563504 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:22.563504 [info ] [Thread-1 (]: 1 of 4 START sql view model main.bronze_parking_violation_codes ................ [RUN]
+[0m22:08:22.571816 [debug] [Thread-1 (]: Acquiring new duckdb connection 'model.nyc_parking_violations.bronze_parking_violation_codes'
+[0m22:08:22.573493 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:22.577494 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.577494 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violation_codes (compile): 22:08:22.573493 => 22:08:22.577494
+[0m22:08:22.577494 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:22.608591 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.608591 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.608591 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: BEGIN
+[0m22:08:22.608591 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m22:08:22.626930 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.626930 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.626930 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.bronze_parking_violation_codes"} */
+
+  
+  create view "nyc_parking_violations"."main"."bronze_parking_violation_codes__dbt_tmp" as (
+    SELECT
+    code AS violation_code,
+    definition,
+    manhattan_96th_st_below,
+    all_other_areas
+FROM
+    parking_violation_codes
+  );
+
+[0m22:08:22.681897 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.686493 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.688498 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.bronze_parking_violation_codes"} */
+alter view "nyc_parking_violations"."main"."bronze_parking_violation_codes__dbt_tmp" rename to "bronze_parking_violation_codes"
+[0m22:08:22.688498 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.690244 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: COMMIT
+[0m22:08:22.701257 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.701257 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: COMMIT
+[0m22:08:22.706796 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.710016 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violation_codes"
+[0m22:08:22.710016 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.bronze_parking_violation_codes"} */
+drop view if exists "nyc_parking_violations"."main"."bronze_parking_violation_codes__dbt_backup" cascade
+[0m22:08:22.717214 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.717978 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violation_codes (execute): 22:08:22.583009 => 22:08:22.717978
+[0m22:08:22.717978 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violation_codes: Close
+[0m22:08:22.743600 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF8C8C10>]}
+[0m22:08:22.749786 [info ] [Thread-1 (]: 1 of 4 OK created sql view model main.bronze_parking_violation_codes ........... [[32mOK[0m in 0.17s]
+[0m22:08:22.749786 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.bronze_parking_violation_codes
+[0m22:08:22.749786 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:22.749786 [info ] [Thread-1 (]: 2 of 4 START sql view model main.bronze_parking_violations ..................... [RUN]
+[0m22:08:22.749786 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_parking_violations.bronze_parking_violation_codes, now model.nyc_parking_violations.bronze_parking_violations)
+[0m22:08:22.749786 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:22.749786 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.749786 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violations (compile): 22:08:22.749786 => 22:08:22.749786
+[0m22:08:22.758251 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:22.760257 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.764189 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.764189 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: BEGIN
+[0m22:08:22.764189 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:08:22.774355 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.774355 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.774355 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.bronze_parking_violations"} */
+
+  
+  create view "nyc_parking_violations"."main"."bronze_parking_violations__dbt_tmp" as (
+    SELECT
+    summons_number,
+    registration_state,
+    plate_type,
+    issue_date,
+    violation_code,
+    vehicle_body_type,
+    vehicle_make,
+    issuing_agency,
+    vehicle_expiration_date,
+    violation_location,
+    violation_precinct,
+    issuer_precinct,
+    issuer_code,
+    issuer_command,
+    issuer_squad,
+    violation_time,
+    violation_county,
+    violation_legal_code,
+    vehicle_color,
+    vehicle_year,
+FROM
+    parking_violations_2023
+  );
+
+[0m22:08:22.774355 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.785186 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.785186 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.bronze_parking_violations"} */
+alter view "nyc_parking_violations"."main"."bronze_parking_violations__dbt_tmp" rename to "bronze_parking_violations"
+[0m22:08:22.785186 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.785186 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: COMMIT
+[0m22:08:22.791192 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.791192 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: COMMIT
+[0m22:08:22.791192 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.791192 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.bronze_parking_violations"
+[0m22:08:22.799609 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.bronze_parking_violations"} */
+drop view if exists "nyc_parking_violations"."main"."bronze_parking_violations__dbt_backup" cascade
+[0m22:08:22.799609 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.799609 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.bronze_parking_violations (execute): 22:08:22.758251 => 22:08:22.799609
+[0m22:08:22.799609 [debug] [Thread-1 (]: On model.nyc_parking_violations.bronze_parking_violations: Close
+[0m22:08:22.817668 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF8CBEB0>]}
+[0m22:08:22.817668 [info ] [Thread-1 (]: 2 of 4 OK created sql view model main.bronze_parking_violations ................ [[32mOK[0m in 0.07s]
+[0m22:08:22.817668 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.bronze_parking_violations
+[0m22:08:22.817668 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.first_model
+[0m22:08:22.817668 [info ] [Thread-1 (]: 3 of 4 START sql view model main.first_model ................................... [RUN]
+[0m22:08:22.817668 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_parking_violations.bronze_parking_violations, now model.nyc_parking_violations.first_model)
+[0m22:08:22.817668 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.first_model
+[0m22:08:22.817668 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.first_model"
+[0m22:08:22.817668 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.first_model (compile): 22:08:22.817668 => 22:08:22.817668
+[0m22:08:22.817668 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.first_model
+[0m22:08:22.833097 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_parking_violations.first_model"
+[0m22:08:22.833417 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.first_model"
+[0m22:08:22.833417 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: BEGIN
+[0m22:08:22.833417 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:08:22.839950 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.849499 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.first_model"
+[0m22:08:22.850965 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.first_model"} */
+
+  
+  create view "nyc_parking_violations"."main"."first_model__dbt_tmp" as (
+    SELECT * FROM parking_violation_codes
+  );
+
+[0m22:08:22.851653 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.851653 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.first_model"
+[0m22:08:22.851653 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.first_model"} */
+alter view "nyc_parking_violations"."main"."first_model" rename to "first_model__dbt_backup"
+[0m22:08:22.851653 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.857787 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.first_model"
+[0m22:08:22.857787 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.first_model"} */
+alter view "nyc_parking_violations"."main"."first_model__dbt_tmp" rename to "first_model"
+[0m22:08:22.857787 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.857787 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: COMMIT
+[0m22:08:22.857787 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.first_model"
+[0m22:08:22.857787 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: COMMIT
+[0m22:08:22.866217 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.872322 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.first_model"
+[0m22:08:22.872322 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.first_model"} */
+drop view if exists "nyc_parking_violations"."main"."first_model__dbt_backup" cascade
+[0m22:08:22.872322 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.872322 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.first_model (execute): 22:08:22.817668 => 22:08:22.872322
+[0m22:08:22.872322 [debug] [Thread-1 (]: On model.nyc_parking_violations.first_model: Close
+[0m22:08:22.884245 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF9736D0>]}
+[0m22:08:22.884245 [info ] [Thread-1 (]: 3 of 4 OK created sql view model main.first_model .............................. [[32mOK[0m in 0.07s]
+[0m22:08:22.884245 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.first_model
+[0m22:08:22.898212 [debug] [Thread-1 (]: Began running node model.nyc_parking_violations.ref_model
+[0m22:08:22.898212 [info ] [Thread-1 (]: 4 of 4 START sql view model main.ref_model ..................................... [RUN]
+[0m22:08:22.901123 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.nyc_parking_violations.first_model, now model.nyc_parking_violations.ref_model)
+[0m22:08:22.902656 [debug] [Thread-1 (]: Began compiling node model.nyc_parking_violations.ref_model
+[0m22:08:22.902656 [debug] [Thread-1 (]: Writing injected SQL for node "model.nyc_parking_violations.ref_model"
+[0m22:08:22.906530 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.ref_model (compile): 22:08:22.902656 => 22:08:22.906530
+[0m22:08:22.906530 [debug] [Thread-1 (]: Began executing node model.nyc_parking_violations.ref_model
+[0m22:08:22.906530 [debug] [Thread-1 (]: Writing runtime sql for node "model.nyc_parking_violations.ref_model"
+[0m22:08:22.911381 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.ref_model"
+[0m22:08:22.911381 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: BEGIN
+[0m22:08:22.911381 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m22:08:22.919014 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.919014 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.ref_model"
+[0m22:08:22.919014 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.ref_model"} */
+
+  
+  create view "nyc_parking_violations"."main"."ref_model__dbt_tmp" as (
+    SELECT Count(*) from "nyc_parking_violations"."main"."first_model"
+  );
+
+[0m22:08:22.930670 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.933256 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.ref_model"
+[0m22:08:22.933256 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.ref_model"} */
+alter view "nyc_parking_violations"."main"."ref_model" rename to "ref_model__dbt_backup"
+[0m22:08:22.933256 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.933256 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.ref_model"
+[0m22:08:22.933256 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.ref_model"} */
+alter view "nyc_parking_violations"."main"."ref_model__dbt_tmp" rename to "ref_model"
+[0m22:08:22.933256 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.933256 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: COMMIT
+[0m22:08:22.933256 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.ref_model"
+[0m22:08:22.933256 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: COMMIT
+[0m22:08:22.946500 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.950129 [debug] [Thread-1 (]: Using duckdb connection "model.nyc_parking_violations.ref_model"
+[0m22:08:22.950129 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: /* {"app": "dbt", "dbt_version": "1.6.1", "profile_name": "nyc_parking_violations", "target_name": "dev", "node_id": "model.nyc_parking_violations.ref_model"} */
+drop view if exists "nyc_parking_violations"."main"."ref_model__dbt_backup" cascade
+[0m22:08:22.950129 [debug] [Thread-1 (]: SQL status: OK in 0.0 seconds
+[0m22:08:22.950129 [debug] [Thread-1 (]: Timing info for model.nyc_parking_violations.ref_model (execute): 22:08:22.906530 => 22:08:22.950129
+[0m22:08:22.950129 [debug] [Thread-1 (]: On model.nyc_parking_violations.ref_model: Close
+[0m22:08:22.967027 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0c5deff1-28f0-44e5-bbc2-7375c0d09422', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF95C730>]}
+[0m22:08:22.967027 [info ] [Thread-1 (]: 4 of 4 OK created sql view model main.ref_model ................................ [[32mOK[0m in 0.07s]
+[0m22:08:22.967027 [debug] [Thread-1 (]: Finished running node model.nyc_parking_violations.ref_model
+[0m22:08:22.967027 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:08:22.967027 [debug] [MainThread]: On master: BEGIN
+[0m22:08:22.967027 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m22:08:22.986190 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m22:08:22.986190 [debug] [MainThread]: On master: COMMIT
+[0m22:08:22.986190 [debug] [MainThread]: Using duckdb connection "master"
+[0m22:08:22.986190 [debug] [MainThread]: On master: COMMIT
+[0m22:08:22.986190 [debug] [MainThread]: SQL status: OK in 0.0 seconds
+[0m22:08:22.986190 [debug] [MainThread]: On master: Close
+[0m22:08:22.994642 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m22:08:22.994642 [debug] [MainThread]: Connection 'create_nyc_parking_violations_main' was properly closed.
+[0m22:08:22.994642 [debug] [MainThread]: Connection 'list_nyc_parking_violations_main' was properly closed.
+[0m22:08:22.994642 [debug] [MainThread]: Connection 'model.nyc_parking_violations.ref_model' was properly closed.
+[0m22:08:22.994642 [info ] [MainThread]: 
+[0m22:08:22.994642 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 0.56 seconds (0.56s).
+[0m22:08:23.000146 [debug] [MainThread]: Command end result
+[0m22:08:23.010377 [info ] [MainThread]: 
+[0m22:08:23.010377 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m22:08:23.011957 [info ] [MainThread]: 
+[0m22:08:23.011957 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m22:08:23.011957 [debug] [MainThread]: Command `dbt run` succeeded at 22:08:23.011957 after 0.85 seconds
+[0m22:08:23.011957 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AC74F520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF876860>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000289AF876890>]}
+[0m22:08:23.011957 [debug] [MainThread]: Flushing usage events
