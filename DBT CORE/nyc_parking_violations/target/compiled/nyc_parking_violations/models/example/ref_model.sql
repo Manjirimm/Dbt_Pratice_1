@@ -1,0 +1,1 @@
+SELECT Count(*) from "nyc_parking_violations"."main"."first_model"

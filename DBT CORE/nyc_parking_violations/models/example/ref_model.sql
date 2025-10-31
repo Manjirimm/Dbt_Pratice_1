@@ -1,0 +1,1 @@
+SELECT Count(*) from {{ref('first_model')}}
